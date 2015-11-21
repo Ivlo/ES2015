@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<h1>let</h1>
+
+</body>
+<script type="text/javascript">
+  'use strict';
+
+function loadProfiles(userNames) {
+
+  for(let i in userNames) {
+    _fetchProfile("/users/" + usersNames[i], function(){
+      console.log("Fetched for ", userNames[i]);
+    });
+  }
+}
+
+
+loadProfiles(["Sam", "Tyler", "Brook", "Alex"]);
+
+</script>
+</html>
